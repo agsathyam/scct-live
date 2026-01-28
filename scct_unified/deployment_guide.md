@@ -35,9 +35,9 @@ gcloud run deploy scct-unified \
   --source . \
   --region us-central1 \
   --project YOUR_PROJECT_ID \
-  --allow-unauthenticated \
   --set-env-vars "PROJECT_ID=YOUR_PROJECT_ID,LOCATION=us-central1,AGENT_ID=YOUR_AGENT_ID"
 ```
+> **Note**: This deploys as a private service. Secure it with Cloud Load Balancing or IAM.
 
 ## What Happens During Deployment?
 

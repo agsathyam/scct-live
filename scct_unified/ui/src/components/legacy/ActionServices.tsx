@@ -423,7 +423,6 @@ echo "Flask==3.0.0\\ngunicorn==21.2.0\\ngoogle-cloud-bigquery==3.13.0" > require
 gcloud run deploy supply-chain-actions \\
   --source . \\
   --region us-central1 \\
-  --allow-unauthenticated \\
   --set-env-vars BQ_TABLE_ID=[YOUR_PROJECT].supply_chain_control_tower.agent_decisions \\
   --max-instances 5 \\
   --memory 512Mi`;

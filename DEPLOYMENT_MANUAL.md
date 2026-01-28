@@ -128,7 +128,6 @@ This Service hosts the tools (BigQuery, Search, etc.) that the Agent calls.
     gcloud run deploy scct-tools \
       --source . \
       --region us-central1 \
-      --allow-unauthenticated \
       --set-env-vars GCP_PROJECT_ID=YOUR_PROJECT_ID \
       --set-env-vars VERTEX_SEARCH_DATA_STORE_ID=YOUR_DATA_STORE_ID \
       --set-env-vars BQ_TABLE_ID=supply_chain_control_tower.agent_decisions \
@@ -137,6 +136,7 @@ This Service hosts the tools (BigQuery, Search, etc.) that the Agent calls.
       --set-env-vars BQ_EXCEPTIONS_TABLE=supply_chain_control_tower.exceptions \
       --set-env-vars BQ_RESOLUTIONS_TABLE=supply_chain_control_tower.resolutions
     ```
+    > **Security Note**: By default, Cloud Run services are private. You will need to configure authentication (IAM) or a Load Balancer to access this securely.
 
 3.  **Note the Service URL**: e.g., `https://scct-tools-xyz.run.app`. You will use this as `BASE_URL` for the Agent.
 
@@ -210,7 +210,6 @@ This is the user interface and the BFF (Backend for Frontend).
     gcloud run deploy scct-unified \
       --source . \
       --region us-central1 \
-      --allow-unauthenticated \
       --set-env-vars PROJECT_ID=YOUR_PROJECT_ID \
       --set-env-vars LOCATION=us-central1 \
       --set-env-vars AGENT_ID=YOUR_AGENT_RESOURCE_ID \
