@@ -1,0 +1,10 @@
+google-adk>=0.1.0
+google-cloud-aiplatform[agent_engines,adk]>=1.132.0
+cloudpickle>=3.1.2
+google-genai
+google-auth
+google-auth-httplib2
+google-auth-oauthlib
+requests>=2.32.5
+PyYAML
+python-dotenv

@@ -1,0 +1,11 @@
+ui/node_modules
+ui/.env
+ui/.env.local
+ui/*.log
+backend/__pycache__
+backend/*.pyc
+backend/.env
+backend/venv
+.git
+.DS_Store
+*.md

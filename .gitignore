@@ -1,0 +1,40 @@
+# Secrets
+.env
+.env.local
+.env.*.local
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs
+*.log
+
+# Dependency directories
+node_modules/
+__pycache__/
+*.pyc
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# Deployment & Local Scripts (Excluded per Security Audit)
+controltower/deploy.py
+controltower/newtest.py
+controltower/testscct.py
+controltower/.adk/*
+scct_unified/deploy.sh
+scct_unified/deploy_cloudrun.sh
+scct_unified/backend/static/
+supply_chain_tools/openapi.yaml
+scct_unified/backend/static/
+.adk/*
+commands.txt
+
+# Backups & Archives
+*.zip
+*.tar.gz
+*.rar

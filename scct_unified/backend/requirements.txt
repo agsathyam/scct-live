@@ -1,0 +1,12 @@
+flask
+flask-cors
+gunicorn
+google-cloud-aiplatform
+google-cloud-discoveryengine
+google-cloud-bigquery
+python-dotenv
+
+requests
+google-auth
+google-auth-oauthlib
+google-auth-httplib2

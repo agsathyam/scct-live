@@ -1,0 +1,5 @@
+flask
+gunicorn
+google-cloud-bigquery
+google-cloud-discoveryengine
+python-dotenv
